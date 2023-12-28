@@ -28,8 +28,17 @@ function handleData(e){
         console.log(ramen)
         //grab ramen-image container
         const ramenDisplay= document.querySelector('#ramen-image');
+        const ramenName= document.querySelector('#ramen-name');
+        const restaurant= document.querySelector('#restaurant');
+        const rating= document.querySelector('#rating-display');
+        const comment= document.querySelector('#comment-display');
+
         ramenDisplay.src=ramen.image;
         ramenDisplay.alt=ramen.name;
+        ramenName.textContent=ramen.name;
+        restaurant.textContent=ramen.restaurant;
+        rating.textContent=ramen.rating;
+        comment.textContent=ramen.comment
 
 
     }
